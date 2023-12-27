@@ -1,0 +1,42 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.table-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  max-width: 1100px;
+  border-collapse: collapse;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+caption {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+th {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(152, 208, 226);
+}
+
+tbody tr td {
+  padding: 5px;
+  border: 2px solid rgb(116, 116, 116);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(238, 246, 248);
+}
+
+.center {
+  text-align: center;
+}
