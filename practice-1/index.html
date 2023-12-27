@@ -34,8 +34,11 @@
           </div>
           <div class="lead-container__image">
             <p>Логотип (jpeg, png)</p>
-            <input id="upload-file" type="file" accept="image/png, image/jpeg" required>
-            <label for="upload-file">Выберите файл</label>
+            <input id="upload-file" type="file" accept="image/png, image/jpeg" class="visually-hidden" required>
+            <label for="upload-file" class="lead-container__image-lable">Выберите файл</label>
+            <label for="upload-file" class="lead-container__image-lable-text">Выберите файл</label>
+            <button type="button" class="lead-container__image-btn"><span class="visually-hidden">убрать
+                фото</span></button>
           </div>
         </div>
 
@@ -63,7 +66,7 @@
 
         <div class="form-container__buttons">
           <button type="submit" class="form-container__buttons-submit">Стать партнёром проекта</button>
-          <button class="form-container__buttons-cancel">Отменить</button>
+          <button class="form-container__buttons-cancel" type="button">Отменить</button>
         </div>
       </div>
     </form>

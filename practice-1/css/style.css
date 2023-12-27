@@ -175,7 +175,8 @@ body {
 }
 
 .input-field__label::before,
-.select-container__label::before {
+.select-container__label::before,
+.lead-container__image>p::before {
   content: ' ';
   display: inline-block;
   width: 9px;
@@ -193,6 +194,92 @@ body {
 .lead-container__image {
   max-width: 165px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.lead-container__image>p {
+  color: #6A6E72;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.lead-container__image-lable {
+  position: absolute;
+  width: 163px;
+  height: 163px;
+  top: 40px;
+  font-size: 0;
+  background: url('../img/photo-stub.png') no-repeat center center/cover;
+  cursor: pointer;
+}
+
+.lead-container__image-lable::before {
+  content: ' ';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  left: 38%;
+  top: 25%;
+  background: url('../svg/load-img.svg') no-repeat center center/cover;
+  position: absolute;
+}
+
+.lead-container__image-lable-text {
+  display: inline-block;
+  max-width: 80px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: underline;
+  color: #FFF;
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+}
+
+.lead-container__image-btn {
+  width: 37px;
+  height: 37px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 120px;
+}
+
+.lead-container__image-btn::before,
+.lead-container__image-btn::after {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: rgba(106, 110, 114, 1)
+}
+
+.lead-container__image-btn::before {
+  transform: rotate(45deg);
+}
+
+.lead-container__image-btn::after {
+  transform: rotate(-45deg);
 }
 
 .select-container .select-container__dropdown {
@@ -202,7 +289,7 @@ body {
 .select-container__dropdown {
   appearance: none;
   cursor: pointer;
-  background: url('../svg/Group.svg') no-repeat calc(100% - 15px) 50%;
+  background: url('../svg/select.svg') no-repeat calc(100% - 15px) 50%;
 }
 
 .form-container__website {
