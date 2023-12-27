@@ -1,0 +1,65 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+
+.table-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.table-container__search {
+  min-height: 30px;
+  margin-bottom: 10px;
+}
+
+table {
+  max-width: 1100px;
+  border-collapse: collapse;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+th {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(152, 208, 226);
+}
+
+th:hover {
+  cursor: pointer;
+}
+
+.checked {
+  background-color: rgb(101, 146, 161);
+}
+
+tbody tr td {
+  padding: 5px;
+  border: 2px solid rgb(116, 116, 116);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(238, 246, 248);
+}
+
+.center {
+  text-align: center;
+}
