@@ -4,10 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>practice-1</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <form class="popup-form">
+    <div class="form-container">
+      <legend>Стать партнёром проекта</legend>
+      <div class="form-container__lead">
+        <div class="form-container__lead-input">
+          <input type="text" autocomplete="off" required> Название организации
+          <input type="number" autocomplete="off" required>* Телефон
+          <input type="mail" autocomplete="off" required>* E-mail
+        </div>
+        <div class="form-container__lead-image">
+          <p>* Логотип (jpeg, png)</p>
+          <input id="upload-file" type="file" accept="image/png, image/jpeg" required>
+          <label for="upload-file">Выберите файл</label>
+        </div>
+      </div>
+
+      <select class="form-container__dropdown">
+        <option value="oslo">Экология</option>
+        <option value="oslo">Экология</option>
+        <option value="oslo">Экология</option>
+      </select>
+
+      <input type="text" class="form-container__website" autocomplete="off">
+      <input type="text" class="form-container__vk">
+      <input type="text" class="form-container__classmates" autocomplete="off">
+      <input type="text" class="form-container__facebook" autocomplete="off">
+      <input type="text" class="form-container__instagram" autocomplete="off">
+      <input type="text" class="form-container__youtube" autocomplete="off">
+      <input type="text" class="form-container__lead" autocomplete="off">Руководитель
+
+      <div class="form-container__buttons">
+        <button type="submit" class="form-container__buttons-submit">Стать партнёром проекта</button>
+        <button class="form-container__buttons-cancel">Отменить</button>
+      </div>
+    </div>
+  </form>
   <script src="script.js"></script>
 </body>
 
