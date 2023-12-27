@@ -1,0 +1,258 @@
+/*обнулление стилей*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-style: 100%;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+/*обнулление стилей*/
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: rgb(235, 228, 228);
+  position: relative;
+}
+
+.popup-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*height: 100%;*/
+  /*из за этого проблемы с прокруткой*/
+  background-color: rgba(0, 0, 0, 0.42);
+  z-index: 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-form {
+  max-width: 754px;
+  width: 100%;
+  padding: 53px 98px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input,
+.select-container__dropdown {
+  width: 100%;
+  min-height: 56px;
+  margin-bottom: 32px;
+  padding: 16px;
+  padding-right: 40px;
+  border: 1px solid #D6DADE;
+  background-color: #FFF;
+}
+
+.form-container>legend {
+  margin-bottom: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 34px;
+  color: #0C1014;
+}
+
+.lead-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lead-container__input {
+  max-width: 362px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field>input,
+.select-container__dropdown {
+  padding: 22px 16px 8px;
+}
+
+.input-field__label,
+.select-container__label,
+.lead-container__label {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 12px;
+  color: #6A6E72;
+}
+
+.input-field__label::before,
+.select-container__label::before {
+  content: ' ';
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 3px;
+  background: url('../img/red-star.png') no-repeat center center/cover;
+}
+
+.input-field,
+.select-container,
+.lead-container {
+  position: relative;
+}
+
+.lead-container__image {
+  max-width: 165px;
+  width: 100%;
+}
+
+.select-container .select-container__dropdown {
+  height: 20px;
+}
+
+.select-container__dropdown {
+  appearance: none;
+  cursor: pointer;
+  background: url('../svg/Group.svg') no-repeat calc(100% - 15px) 50%;
+}
+
+.form-container__website {
+  background: url('../svg/global.svg') no-repeat calc(100% - 15px) 50%;
+}
+
+.form-container__vk {
+  background: url('../svg/vk.svg') no-repeat calc(100% - 15px) 50%;
+}
+
+.form-container__classmates {
+  background: url('../svg/classmates.svg') no-repeat calc(100% - 15px) 50%;
+}
+
+.form-container__facebook {
+  background: url('../svg/facebook.svg') no-repeat calc(100% - 15px) 50%;
+}
+
+.form-container__instagram {
+  background: url('../svg/Instagram.svg') no-repeat calc(100% - 15px) 50%;
+}
+
+.form-container__youtube {
+  background: url('../svg/youtube.svg') no-repeat calc(100% - 15px) 50%;
+}
+
+.form-container input.last-input {
+  margin-bottom: 50px;
+  padding: 22px 16px 8px;
+}
+
+.form-container__buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-container__buttons-submit {
+  margin-bottom: 15px;
+  padding: 14px 0 16px;
+  line-height: 18px;
+  border-radius: 5px;
+  color: #FFF;
+  background-color: #E5266E;
+}
+
+.form-container__buttons-cancel {
+  max-width: 100px;
+  line-height: 16px;
+  color: #0848C0;
+  background-color: #FFF;
+  align-self: center;
+}
