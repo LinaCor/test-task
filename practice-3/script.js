@@ -79,7 +79,7 @@ inputSearch.addEventListener('input', () => {
 
   if (value.length >= 3) {
     filterPosts = posts.filter(el => {
-      return el.title.includes(value) || el.body.includes(value);
+      return el.title.includes(value.toLowerCase()) || el.body.includes(value.toLowerCase());
     });
     tableBody.innerHTML = filterPosts.map(el => drawRowTable(el)).join('');
   }
