@@ -85,6 +85,7 @@ inputSearch.addEventListener('input', () => {
   }
   if (value.length === 0) {
     tableBody.innerHTML = posts.map(el => drawRowTable(el)).join('');
+    filterPosts = [];
   }
 });
 
