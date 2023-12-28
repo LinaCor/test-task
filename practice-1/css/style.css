@@ -1,4 +1,4 @@
-/*обнулление стилей*/
+/*начало обнуления*/
 * {
   padding: 0;
   margin: 0;
@@ -44,8 +44,10 @@ body {
 
 input,
 button,
-textarea {
+textarea,
+select {
   font-family: inherit;
+  font-size: inherit;
 }
 
 input::-ms-clear {
@@ -88,7 +90,7 @@ h6 {
   font-weight: 400;
 }
 
-/*обнулление стилей*/
+/*конец обнуления*/
 
 body {
   font-family: 'PT Sans', sans-serif;
@@ -204,7 +206,8 @@ body {
   color: #6A6E72;
   font-size: 14px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 22px;
+  letter-spacing: -0.5px;
 }
 
 .visually-hidden {
@@ -220,10 +223,9 @@ body {
 
 .lead-container__image-lable {
   position: absolute;
-  width: 163px;
-  height: 163px;
-  top: 40px;
-  font-size: 0;
+  width: 164px;
+  height: 164px;
+  top: 35px;
   background: url('../img/photo-stub.png') no-repeat center center/cover;
   cursor: pointer;
 }
@@ -233,7 +235,7 @@ body {
   display: inline-block;
   width: 30px;
   height: 30px;
-  left: 38%;
+  left: 40%;
   top: 25%;
   background: url('../svg/load-img.svg') no-repeat center center/cover;
   position: absolute;
@@ -248,7 +250,7 @@ body {
   text-decoration: underline;
   color: #FFF;
   position: absolute;
-  top: 45%;
+  top: 43%;
   cursor: pointer;
 }
 
@@ -258,8 +260,8 @@ body {
   background-color: rgba(255, 255, 255, 1);
   border-radius: 50%;
   position: absolute;
-  top: 50px;
-  left: 120px;
+  top: 45px;
+  left: 125px;
 }
 
 .lead-container__image-btn::before,
@@ -267,7 +269,7 @@ body {
   content: '';
   position: absolute;
   top: 45%;
-  left: 20%;
+  left: 25%;
   display: block;
   width: 20px;
   height: 2px;
@@ -316,28 +318,30 @@ body {
   background: url('../svg/youtube.svg') no-repeat calc(100% - 15px) 50%;
 }
 
-.form-container input.last-input {
+.lead-container .last-input {
   margin-bottom: 50px;
   padding: 22px 16px 8px;
 }
 
-.form-container__buttons {
+.buttons-container {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.form-container__buttons-submit {
-  margin-bottom: 15px;
+.buttons-container__submit {
+  margin-bottom: 13px;
   padding: 14px 0 16px;
   line-height: 18px;
   border-radius: 5px;
+  letter-spacing: 0.5px;
   color: #FFF;
   background-color: #E5266E;
 }
 
-.form-container__buttons-cancel {
+.buttons-container__cancel {
   max-width: 100px;
+  min-height: 26px;
   line-height: 16px;
   color: #0848C0;
   background-color: #FFF;
