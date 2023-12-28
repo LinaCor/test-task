@@ -60,6 +60,7 @@ closeFormBtn.addEventListener('click', closeFormModal);
 
 deleteUploadImage.addEventListener('click', () => {
   uploadImageBtn[0].style.background = '';
+  loadImage.value = '';
 });
 
 loadImage.addEventListener('change', uploadingUserImage);
