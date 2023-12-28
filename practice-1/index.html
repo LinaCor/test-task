@@ -13,8 +13,8 @@
 </head>
 
 <body>
-  <div class="popup-mask">
-    <form class="popup-form">
+  <div class="popup-mask visually-hidden">
+    <form class="popup-form" name="form">
       <div class="form-container">
         <legend>Стать партнёром проекта</legend>
         <div class="lead-container">
@@ -25,11 +25,13 @@
             </div>
             <div class="input-field">
               <label for="tel" class="input-field__label">Телефон</label>
-              <input id="tel" type="tel" autocomplete="off" value="+7 933 848-34-33" required>
+              <input id="tel" type="tel" autocomplete="off" value="+7 933 848-34-33"
+                pattern="^(\+7|8)\s(\d{3})\s(\d{3})-(\d{2})-(\d{2})$" placeholder="+7 933 848-34-33" required>
             </div>
             <div class="input-field">
               <label for="mail" class="input-field__label">E-mail</label>
-              <input id="mail" type="mail" autocomplete="off" value="avc@gmail.com" required>
+              <input id="mail" type="mail" autocomplete="off" value="avc@gmail.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                required>
             </div>
           </div>
           <div class="lead-container__image">
@@ -50,6 +52,7 @@
             <option value="potion">Зельеварение</option>
             <option value="mem">Мемология</option>
             <option value="spel">Спелеология</option>
+            <option value="spel">Свой вариант</option>
           </select>
         </div>
 
@@ -73,8 +76,10 @@
       </div>
     </form>
   </div>
-
-  <script src="js/script.js"></script>
+  <div class="open-form">
+    <button class="open-form__btn" type="button">Написать</button>
+  </div>
+  <script src="js/script-pr1.js"></script>
 </body>
 
 </html>
